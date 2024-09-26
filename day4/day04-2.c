@@ -14,10 +14,9 @@ int main() {
 
 }
 
-static void swap(int *a, int *b)
+static void swap(int *pa, int *pb)
 {
-	int temp = 0;
-	a = temp;
-	b = a;
-	temp = b;
+	int temp = *pa;
+	*pa = *pb;
+	*pb = temp;
 }
